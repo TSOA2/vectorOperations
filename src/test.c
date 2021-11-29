@@ -12,21 +12,33 @@ int main(void) {
     b.y = 5;
     b.z = 5;
 
-    printf("add\n");
+    // add v if vector test, s if scalar test
+    printf("addv\n");
     printVector(vectorAdd(a, b));
-    printf("sub\n");
+    printf("subv\n");
     printVector(vectorSub(a, b));
-    printf("mul\n");
+    printf("mulv\n");
     printVector(vectorMul(a, b));
-    printf("div\n");
+    printf("divv\n");
     printVector(vectorDiv(a, b));
-
-    printf("pow\n");
+    printf("powv\n");
     printVector(vectorPow(a, b));
-    printf("dist\n");
-    printf("%f\n", distance(a, b));
-    printf("dot\n");
-    printf("%f\n", dotProduct(a, b));
-    printf("done\n");
+    printf("distv\n");
+    printf("%fv\n", distance(a, b));
+    printf("dotv\n");
+    printf("%fv\n", dotProduct(a, b));
+
+    printf("\nadds\n");
+    printVector(addScalar(a, 5));
+    printf("subs\n");
+    printVector(subScalar(a, 5));
+    printf("muls\n");
+    printVector(mulScalar(a, 5));
+    printf("divs\n");
+    printVector(divScalar(a, 5));
+    printf("pows\n");
+    printVector(powScalar(a, 5));
+
+    printf("\ndone\n");
     return 0;
 }

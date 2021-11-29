@@ -27,6 +27,21 @@ Vector3D vectorDiv(Vector3D a, Vector3D b);
 // One vector to the power of another (a ** b)
 Vector3D vectorPow(Vector3D a, Vector3D b);
 
+// Add scalar to vector
+Vector3D addScalar(Vector3D a, float b);
+
+// Subtract scalar from vector
+Vector3D subScalar(Vector3D a, float b);
+
+// Multiply scalar and vector
+Vector3D mulScalar(Vector3D a, float b);
+
+// Divide scalar from vector
+Vector3D divScalar(Vector3D a, float b);
+
+// Raise vector to b power
+Vector3D powScalar(Vector3D a, float b);
+
 // Dot product of two vectors
 float dotProduct(Vector3D a, Vector3D b);
 
